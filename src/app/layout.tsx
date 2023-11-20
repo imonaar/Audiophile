@@ -7,8 +7,6 @@ import { manrope } from './ui/fonts/font'
 
 import Header from './ui/header/pages'
 import Footer from './ui/footer/page'
-import Navigationbar from './ui/components/navbar'
-import MenuItems from './ui/components/menu-items'
 
 export const metadata: Metadata = {
   title: 'Audiophile',
@@ -22,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased text-sm h-screen`}>
+      <body className={`${manrope.className} antialiased text-sm h-screen relative`}>
         <Providers>
           <div className='h-full flex flex-col'>
-            <MenuItems/>
+            <Header/>
             <div className='grow'>
               {children}
             </div>

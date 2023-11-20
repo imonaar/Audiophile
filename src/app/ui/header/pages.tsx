@@ -1,11 +1,9 @@
-import Links from "../components/nav-links"
+import Navigationbar from "../components/navbar"
 
 export default function Header() {
   return (
-    <header className="bg-black">
-      <div className="hidden lg:block">
-        <Links />
-      </div>
+    <header className="bg-black w-full">
+      <Navigationbar />
     </header>
   )
 }
