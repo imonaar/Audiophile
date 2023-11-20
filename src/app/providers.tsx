@@ -3,7 +3,7 @@
 import { NextUIProvider } from "@nextui-org/react";
 export default function Providers({ children }: { children: React.ReactNode }) {
     return (
-        <NextUIProvider className="w-full">
+        <NextUIProvider className="w-full h-full">
             {children}
         </NextUIProvider>
     )

@@ -12,24 +12,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
     },
-    colors: {
-      // surface and text
-      'surface-1': "#FFFFFF",
-      'text-1': "#FFFFFF",
-
-      'surface-2': "#F1F1F1",
-      'text-2':"#000000",
-
-      // button
-      'bg-button':"#D87D4A",
-      'bg-button-hover':"#fbaf85",
-    }
   },
   darkMode: "class",
   plugins: [nextui()],
