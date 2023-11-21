@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 body{
   inline-size: 100%;
   max-inline-size: 1440px;

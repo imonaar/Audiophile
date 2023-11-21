@@ -18,7 +18,7 @@ export default function Navigationbar() {
         </button>
 
         {
-          isMenuOpen && <div className="absolute w-full top-24 left-0 bg-white px-6 py-8 lg:hidden">
+          isMenuOpen && <div className="absolute w-full top-24 left-0 bg-white z-50 px-6 py-8 lg:hidden">
             <MenuItems />
           </div>
         }

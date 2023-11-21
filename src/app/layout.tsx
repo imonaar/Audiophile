@@ -7,6 +7,7 @@ import { manrope } from './ui/fonts/font'
 
 import Header from './ui/header/pages'
 import Footer from './ui/footer/page'
+import MainCardBottom from './ui/components/main-card-bottom'
 
 export const metadata: Metadata = {
   title: 'Audiophile',
@@ -23,9 +24,10 @@ export default function RootLayout({
       <body className={`${manrope.className} antialiased text-sm h-screen relative`}>
         <Providers>
           <div className='h-full flex flex-col'>
-            <Header/>
-            <div className='grow'>
+            {/* <Header /> */}
+            <div className='grow grid gap-[120px] padding-x-mobile md:padding-x-tablet lg:padding-x-desktop pb-[120px] '>
               {children}
+              <MainCardBottom />
             </div>
             <Footer />
           </div>
