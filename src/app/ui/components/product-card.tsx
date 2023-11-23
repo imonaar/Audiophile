@@ -23,6 +23,8 @@ interface Product {
     others?: {}
 }
 
+
+
 export function Card({ image, slug, description }: Pick<Product, 'image' | 'slug' | 'description'>) {
 
     return (
@@ -57,10 +59,33 @@ export function Cards({ products }) {
                     return (
                         <li key={product.id}>
                             <div className="overflow-hidden grid gap-2 md:gap-14  lg:grid-cols-2">
-                                <div className="rounded-lg bg-[#f1f1f1] overflow-hidden w-fullrelative flex items-center justify-center">
-                                    <Image src={image.mobile} alt={slug} sizes="100vw" className="w-full h-auto md:hidden" width={0} height={0} />
-                                    <Image src={image.tablet} alt={slug} sizes="100vw" className="w-full h-auto hidden md:block lg:hidden" width={0} height={0} />
-                                    <Image src={image.desktop} alt={slug} sizes="50vw" className="w-full h-auto hidden lg:block" width={0} height={0} />
+                                <div className="rounded-lg bg-[#f1f1f1] overflow-hidden w-full  h-[352px] lg:h-[560px] relative">
+                                    <Image
+                                        src={image.mobile}
+                                        alt="Audiophile best audio gear"
+                                        sizes="100vw"
+                                        className="w-full h-auto md:hidden"
+                                        fill
+                                        objectFit="cover"
+                                    />
+                                    {/* Display Tablet only */}
+                                    <Image
+                                        src={image.tablet}
+                                        alt="Audiophile best audio gear"
+                                        sizes="100vw"
+                                        className="w-full h-auto hidden md:block lg:hidden"
+                                        fill
+                                        objectFit="cover"
+                                    />
+                                    {/* Display Desktop only */}
+                                    <Image
+                                        src={image.desktop}
+                                        alt="Audiophile best audio gear"
+                                        sizes="50vw"
+                                        className="w-full h-auto hidden lg:block"
+                                        fill
+                                        objectFit="cover"
+                                    />
                                 </div>
                                 <div className={clsx("flex flex-col items-center gap-6 text-center lg:ps-28 lg:items-start lg:text-left lg:justify-center", {
                                     'lg:order-first lg:ps-0': index % 2 !== 0
