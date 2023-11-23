@@ -10,10 +10,12 @@ export default function MainCardBottom() {
     return (
         <div className="flex flex-col items-center gap-10 md:gap-16 lg:flex-row-reverse">
             <div className="w-full lg:flex-1 rounded-lg overflow-hidden">
-                {/* <Image src={images.mobile} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto md:hidden" width={327} height={300} />   
-                <Image src={images.tablet} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto hidden md:block lg:hidden" width={689} height={300} />   
-                <Image src={images.desktop} alt="Audiophile best audio gear" sizes="50vw" className="w-full h-auto hidden lg:block" width={540} height={588} />    */}
-                <Image src={images.desktop} alt="Audiophile best audio gear" sizes="50vw" className=" hidden lg:block" width={540} height={588} />   
+                {/* <Image src={images.mobile} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto md:hidden" width={327} height={300} />
+                <Image src={images.tablet} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto hidden md:block lg:hidden" width={689} height={300} />
+                <Image src={images.desktop} alt="Audiophile best audio gear" sizes="50vw" className="w-full h-auto hidden lg:block" width={540} height={588} /> */}
+                <Image src={images.mobile} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto md:hidden" width={0} height={0} />
+                <Image src={images.tablet} alt="Audiophile best audio gear" sizes="100vw" className="w-full h-auto hidden md:block lg:hidden" width={0} height={0} />
+                <Image src={images.desktop} alt="Audiophile best audio gear" sizes="50vw" className="w-full h-auto hidden lg:block" width={0} height={0} />
             </div>
             <div className="flex flex-col items-center gap-8 text-center md:w-[73%] lg:flex-1 lg:text-left lg:items-start">
                 <h3 className="uppercase text-black text-3xl font-bold tracking-wider md:text-4xl ">Bringing you the <span className="text-[#D87D4A]"> best </span> audio gear</h3>

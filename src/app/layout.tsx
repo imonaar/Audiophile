@@ -24,10 +24,13 @@ export default function RootLayout({
       <body className={`${manrope.className} antialiased text-sm h-screen relative`}>
         <Providers>
           <div className='h-full flex flex-col'>
-            {/* <Header /> */}
-            <div className='grow grid gap-[120px] padding-x-mobile md:padding-x-tablet lg:padding-x-desktop pb-[120px] '>
+            <Header />
+            {/* <div className="w-full bg-[#979797] block h-[1px] md:mx-10 lg:mx-40">.</div> */}
+            <div className='grow grid gap-[120px] pb-[120px] '>
               {children}
-              <MainCardBottom />
+              <div className='padding-x-mobile md:padding-x-tablet lg:padding-x-desktop'>
+                <MainCardBottom />
+              </div>
             </div>
             <Footer />
           </div>

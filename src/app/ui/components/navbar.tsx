@@ -11,7 +11,7 @@ import Links from "./nav-links"
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="flex w-full items-center bg-black padding-x-mobile h-[90px] lg:h-24 md:padding-x-tablet lg:padding-x-desktop">
+    <div className="flex w-full items-center bg-black  h-[90px] lg:h-24 ">
       <nav className="w-full flex justify-between items-center md:gap-10">
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden focus:outline-none" aria-pressed={isMenuOpen} aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
           <Image src='/assets/shared/tablet/icon-hamburger.svg' alt="hamburger menu" height={16} width={16} />
