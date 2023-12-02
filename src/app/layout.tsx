@@ -25,7 +25,6 @@ export default function RootLayout({
         <Providers>
           <div className='h-full flex flex-col'>
             <Header />
-            {/* <div className="w-full bg-[#979797] block h-[1px] md:mx-10 lg:mx-40">.</div> */}
             <div className='grow grid gap-[120px] pb-[120px] '>
               {children}
               <div className='padding-x-mobile md:padding-x-tablet lg:padding-x-desktop'>

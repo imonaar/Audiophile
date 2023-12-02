@@ -31,7 +31,7 @@ export default function MenuItems() {
               <Image src={item.src} alt={item.name} width={122} height={160} className="z-10 mb-2" />
               <div className="flex flex-col items-center gap-4 bg-transparent z-10">
                 <h3 className="uppercase font-semibold text-black tracking-wider text-sm">{item.name}</h3>
-                <Link href='/' className="flex items-center gap-3" tabIndex={0}>
+                <Link href={`/${item.name}`} className="flex items-center gap-3" tabIndex={0}>
                   <p className="font-semibold text-sm uppercase">shop</p>
                   <Image src="/assets/shared/desktop/icon-arrow-right.svg" width={5} height={10} alt='icon arrow right' />
                 </Link>
